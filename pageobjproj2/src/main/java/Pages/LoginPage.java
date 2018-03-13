@@ -22,7 +22,7 @@ public class LoginPage {
         driver.get(pageURL);
     }
     public void inputLogin(){
-        //new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfElementLocated(login));
+        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfElementLocated(login));
         driver.findElement(login).sendKeys(email);
     }
     public void inputPassword(){

@@ -57,10 +57,7 @@ public class EventHandler implements WebDriverEventListener {
     }
 
     public void beforeFindBy(By by, WebElement webElement, WebDriver webDriver) {
-        //StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
-        //Arrays.asList(stackTraceElements).forEach(sttr->{System.out.print(sttr.getClassName()+";");});
-        //getClassName(), getFileName(), getLineNumber() and getMethodName()
-        System.out.println("Find element ");//+by.toString());
+        System.out.println("Find element "+by.toString());
     }
 
     public void afterFindBy(By by, WebElement webElement, WebDriver webDriver) {
